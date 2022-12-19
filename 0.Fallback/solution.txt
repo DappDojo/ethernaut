@@ -1,0 +1,12 @@
+Instructions
+In this challenge you need to take ownership of the Fallback contract and withdraw the contract's balance.
+
+Attack
+
+The attack is perpetrated in two steps you don't even need to code a smart contract:
+
+1. Call in Remix the function contribute and send less than 0.001 ether.
+2. Now that you are registered as a contributor (i.e., contribution greater than zero), then send some ether to the contract.
+3. Now you are the owner, call the withdraw function.
+
+Done!
