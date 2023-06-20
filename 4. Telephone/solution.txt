@@ -1,4 +1,0 @@
-
-
-See an example of the attack here:
-https://blog.ethereum.org/2016/06/24/security-alert-smart-contract-wallets-created-in-frontier-are-vulnerable-to-phishing-attacks

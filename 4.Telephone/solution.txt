@@ -1,0 +1,11 @@
+Ethernaut
+
+Be careful confusing msg.sender with tx.origin.
+
+In this case: 
+
+if (tx.origin != msg.sender)
+
+tx.origin and msg.sender are different because tx.origin is the caller of 
+the attacker's contract function (i.e. function callVictim()).
+However, the msg.sender is the Attacker's contract address.
