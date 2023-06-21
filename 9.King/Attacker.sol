@@ -2,7 +2,8 @@
 pragma solidity ^0.8.0;
 
 contract Attacker {
-    address victim = 0x1Ad3c5754675562b78bA111D28b0cc41686b76D7;
+    // Your victim's contract instance.
+    address victim = 0xb20da0c083992C7a5561Ea70c57D27E58a53Ba3b;
 
     function attack() external payable {
         // We use call here instead transfer because transfer
