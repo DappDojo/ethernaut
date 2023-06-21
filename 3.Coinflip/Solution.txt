@@ -1,0 +1,11 @@
+Randonm number generation in Blockchain is very tricky. 
+The lesson here is: do not use blockhashes or timestamps as a source of 
+randomness. Remember that all variables are publicly visible including private
+variables. Miners have access to this information. 
+
+theres isn't a native way to generate random values, 
+implement an orable to generate random numbers. 
+
+In the contract CoinFlipAttack.sol just call the function setValues() 
+to obtain the right answer. It is very easy to predict because 
+the block.number can be obtained very easily. 
