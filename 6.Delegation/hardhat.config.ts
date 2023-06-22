@@ -5,7 +5,7 @@ import "@nomiclabs/hardhat-ethers";
 
 require("dotenv").config();
 
-const { GOERLI_URL, PRIVATE_KEY } = process.env;
+const { SEPOLIA_URL, PRIVATE_KEY } = process.env;
 
 const PRIVATE = PRIVATE_KEY;
 const config: HardhatUserConfig = {
@@ -15,8 +15,8 @@ const config: HardhatUserConfig = {
     hardhat: {
       chainId: 1337 // We set 1337 to make interacting with MetaMask simpler
     },
-    goerli: {
-      url: GOERLI_URL || "",
+    sepolia: {
+      url: SEPOLIA_URL || "",
       accounts: PRIVATE_KEY !== undefined ? [PRIVATE_KEY] : [],
       gasPrice: 3000000000,
       gas: 2100000
