@@ -1,0 +1,4 @@
+1. To solve this challenge approve your own address.
+2. Use the transferFrom function defined in the ERC20 standar.
+
+You can do it directly from Remix. 
