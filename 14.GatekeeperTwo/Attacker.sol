@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Attack{
+contract Attacker{
     bool status;
     // Your instance address
     address victim = 0x839A020252e613ca631B5909Cea705744389609c;

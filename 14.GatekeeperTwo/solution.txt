@@ -1,0 +1,11 @@
+Solution
+
+The contract has an address during deployment but is has not been created yet. 
+So the contract size is equal to zero. In this situation, extcodesize(caller()) returns 0.
+
+Remember, the xor (^) symbol has precedence over '=='
+
+type(uint64).max == 1111111111111111111111111111111111111111111111111111111111111111
+0 - 18446744073709551615;
+
+In hexadecimal: FFFFFFFFFFFFFFFF

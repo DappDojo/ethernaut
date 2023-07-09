@@ -1,0 +1,4 @@
+You can recover the contract address on Etherscan. 
+Remember that all transactions are immutable in the Blockchain.
+Use this address to retrieve the instance of the contract. 
+Then call the function destroy and send your address as argument. 
