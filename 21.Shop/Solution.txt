@@ -1,0 +1,5 @@
+The function price() is view only, however this doesn't mean that
+it cannot return different values. 
+
+We keep track of the number of times that the victim calls this 
+function.
