@@ -12,7 +12,7 @@ async function main() {
     const factory = await ethers.getContractFactory("AlienCodex");
     const contract = factory.attach(contractAddress);
 
-    let tx
+    let tx;
     tx = await contract.makeContact();
     await tx.wait();
 
