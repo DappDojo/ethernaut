@@ -1,0 +1,5 @@
+The getPrice formula is incorrect. Is not implementing the Constant Product Model. 
+
+To crack this challenge, just perform several swaps until one of the pools is drain.
+
+Just be careful with the last swap (token B equal to 45).
