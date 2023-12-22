@@ -4,9 +4,12 @@
 
 In this repo you can find my solutions to the challenges:
 
-01. **Fallback**
-This level is about the fallback function. You need to claim ownership of the contract and reduce it's balance to zero.
+### 01. **Fallback**
+This level is about the use and implementation of the fallback function. You need to claim ownership of the contract and reduce its balance to zero.
 
-02. **Fal1Out**
+### 02. **Fal1Out**
 In this challenge you have to discover a very tiny mistake (or a typo) and show its terrible consequences. 
+
+### 03. **Coin Flip **
+To complete this level you'll need to guess the correct outcome 10 times in a row. The goal of this level is to show how tricky random number generation is in Blockchain networks.
 
