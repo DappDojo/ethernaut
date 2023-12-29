@@ -32,4 +32,7 @@ In this level you need to get the value of an on-chain private variable to unloc
 In this challenge, you need to understand the consequences of not verifying that a transfer was successfully executed.
 
 ### 10. **Re-entrancy**
-The goal of this level is for you to steal all funds from the contract by launching a re-entrancy attack. 
+The goal of this level is for you to steal all funds from the contract by launching a re-entrancy attack. To do this you need to exploit a vulnerability in function withdraw. 
+
+### 11. **Elevator**
+In this challenge the attacker implements its own version of a function declared in an interface but never implemented. Never trust an external contract call. 
